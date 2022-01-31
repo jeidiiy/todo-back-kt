@@ -16,4 +16,8 @@ class Todo(
 
     @Column(nullable = false)
     var todoName: String
-)
+) {
+    override fun toString(): String {
+        return "Todo(id=$id, completed=$completed, todoName='$todoName')"
+    }
+}
